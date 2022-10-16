@@ -1,0 +1,12 @@
+{
+  "name": "8.-modern-email-starter-files",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "live-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
