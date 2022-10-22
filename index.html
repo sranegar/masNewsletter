@@ -6,10 +6,13 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Media Arts & Science | School of Informatics and Computing</title>
+	<title></title>
 	<link rel="stylesheet" href="https://use.typekit.net/wvk6lws.css">
 	<meta name="color-scheme" content="light dark">
 	<meta name="supported-color-schemes" content="light dark">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 	<style type="text/css">
 		:root {
 			color-scheme: light dark;
@@ -17,14 +20,22 @@
 		}
 
 		@media (prefers-color-scheme: dark) {
+			.dark-font {
+				color: #fff !important;
+			}
+
+				[data-ogsc] .dark-main 	.dark-font {
+				color: #fff !important;
+			}
+
 			.dark-main {
 				background-color: #262626 !important;
-				color: #fff !important;
+				 
 			}
 
 			[data-ogsc] .dark-main {
 				background-color: #262626 !important;
-				color: #fff !important;
+				 
 			}
 
 			.light-logo {
@@ -89,12 +100,12 @@
 				color: #fff !important;
 			}
 
-			.resource-column .dark-resource-column .dark-link {
+			.dark-link {
 
 				color: #63B1D3 !important;
 			}
 
-			[data-ogsc] .resource-column .dark-resource-column .dark-link {
+			[data-ogsc] .dark-link {
 
 				color: #63B1D3 !important;
 			}
@@ -103,11 +114,7 @@
  
 
 		}
-
-		@font-face {
-			font-family: Roboto;
-			src: url(fonts/Roboto-Regular.ttf);
-		}
+ 
 
 		body {
 			margin: 0;
@@ -121,7 +128,7 @@
 		h4,
 		h5,
 		h6,
-		p {
+		p, a {
 			font-family: Roboto;
 		}
 
@@ -132,8 +139,6 @@
 		h4 {
 			font-size: 18px;
 		}
-
-
 
 		table {
 			border-spacing: 0;
@@ -152,22 +157,19 @@
 			table-layout: fixed;
 			/* background-color: aqua; */
 
-
 		}
 
 		.main {
-			background-color: rgb(255, 255, 255);
 			margin: 0 auto;
 			width: 100%;
 			max-width: 600px;
 			border-spacing: 0;
-			font-family: Arial, Helvetica, sans-serif;
-			color: black;
+		 
 		}
 
 		.video-column {
 			text-align: center;
-			padding: 10px 10px 30px;
+		 
 		}
 
 		.video-column .column {
@@ -175,8 +177,7 @@
 			max-width: 500px;
 			height: 280px;
 			margin: 0 auto;
-			padding: 40px;
-			background-color: #f7f7f7;
+				 
 		}
 
 		.bottom-column {
@@ -184,19 +185,8 @@
 			padding: 10px 10px 30px;
 		}
 
-		.video-column .column {
-			width: 100%;
-			max-width: 500px;
-			height: 280px;
-			margin: 0 auto;
-			padding: 40px;
-			background-color: #f7f7f7;
-		}
-
-
 		.video-column .column video {
 			width: 100%;
-
 		}
 
 		.three-columns {
@@ -263,10 +253,7 @@
 		.resource-column .column {
 			width: 100%;
 			max-width: 500px;
-			margin: 0 auto;
-			height: 30px;
-			padding: 20px 30px 20px;
-			background-color: #f7f7f7;
+			margin: 0 auto;		 
 		}
 
 		.resource-column p {
@@ -304,7 +291,7 @@
 <body>
 
 	<center class="wrapper">
-		<table class="main dark-main" width="100%">
+		<table class="main dark-main" width="100%" style="background-color: rgb(255, 255, 255); color: #000">
 
 			<!-- TOP BORDER -->
 			<tr>
@@ -320,17 +307,17 @@
 								<table class="column">
 									<tr>
 										<td>
-											<img src="https://i.ibb.co/QctbqVW/iu-tab-web.png" alt="SOIC-IUPUI-color-HORIZ" border="0"
+											<img src="https://mcusercontent.com/79433c847494fdb42cd1302c5/images/895dea96-758a-84e4-d904-735ecc92d3fe.png" alt="SOIC-IUPUI-color-HORIZ" border="0"
 												width="34" height="40" style="margin-right: 10px">
 											<!-- <img src="https://i.ibb.co/4YHkpfc/SOIC-IUPUI-color-HORIZ.png"
 												alt="SOIC-IUPUI-color-HORIZ" border="0" width="220"> -->
 										</td>
 										<td>
-											<p style="margin: 0px; padding: 0px; font-size: 15px; font-weight: bold;">
+											<p class="dark-font" style="margin: 0px; padding: 0px; font-size: 15px; font-weight: bold; color: #000">
 												IUPUI</p>
-											<p style="margin: 0px; padding: 0px; font-size: 11px;">INDIANA UNIVERSITY
+											<p class="dark-font" style="margin: 0px; padding: 0px; font-size: 11px; color: #000">INDIANA UNIVERSITY
 											</p>
-											<p style="margin: 0px; padding: 0px; font-size: 10px;">School of Informatics
+											<p class="dark-font" style="margin: 0px; padding: 0px; font-size: 10px; color: #000">School of Informatics
 												and Computing</p>
 										</td>
 									</tr>
@@ -349,13 +336,13 @@
 						<tr>
 							<td style="text-align: center">
 
-								<img class="light-logo" src="https://i.ibb.co/whXC6Zx/mas-banner.png" alt="mas-banner"
+								<img class="light-logo" src="https://mcusercontent.com/79433c847494fdb42cd1302c5/images/ef7657fc-cd2e-b94a-2820-18029d86ab0e.png" alt="mas-banner"
 									border="0" width="500" style="max-width: 100%" />
 								<!--[if !mso]><! -->
 								<div class="dark-logo"
 									style="display:none; overflow: hidden; float: left; width: 0px; max-height: 0px; max-width: 0px; line-height: 0px; visibility: hidden;"
 									align="center">
-									<img src="https://i.ibb.co/mF0h1xB/mas-banner-dark.png" alt="mas-banner" border="0" width="500"
+									<img src="https://mcusercontent.com/79433c847494fdb42cd1302c5/images/e963ba6f-6443-b217-9659-529bfba62e87.png" alt="mas-banner" border="0" width="500"
 										style="max-width: 100%" />
 								</div>
 								<!--<![endif]-->
@@ -369,23 +356,23 @@
 				<td>
 					<table width="100%">
 						<tr>
-							<td class="video-column">
-								<table class="column dark-video-column">
+							<td class="video-column" style="padding-bottom: 30px;">
+								<table class="column dark-video-column" style="background-color: #f7f7f7;">
 									<tr>
-										<td>
+										<td style="padding: 20px 20px 0px">
 											<video src="https://www.w3schools.com/html/mov_bbb.mp4"
-												poster="https://i.ibb.co/tbDjGpZ/video-img.jpg" controls="controls">
-												<img src="https://i.ibb.co/tbDjGpZ/video-img.jpg" alt="video-img"
+												poster="https://mcusercontent.com/79433c847494fdb42cd1302c5/images/5e41d27c-3211-12bd-699d-17eb2d2b405b.jpg" controls="controls">
+												<img src="https://mcusercontent.com/79433c847494fdb42cd1302c5/images/5e41d27c-3211-12bd-699d-17eb2d2b405b.jpg" alt="video-img"
 													border="0" />
 											</video>
 										</td>
 									</tr>
 									<tr>
-										<td style="text-align: left">
-											<h3 style="margin-top: 30px">State-of-Industry News...</h3>
-											<p style="font-size: 18px">This is where you'll type more...</p>
+										<td style="text-align: left;  padding: 20px 20px 30px;">
+											<h3 class="dark-font" style="margin-top: 30px; color: #000">State-of-Industry News...</h3>
+											<p class="dark-font"  style="font-size: 18px; color: #000">This is where you'll type more...</p>
 											<a href="#" class="dark-link"
-												style="font-size: 16px; text-decoration: none; color: #006298; font-weight: bold"
+												style="font-size: 16px; text-decoration: none; color: #006298; font-weight: bold;"
 												href="#">View more...</a>
 										</td>
 									</tr>
@@ -403,7 +390,7 @@
 					<table width="100%">
 						<tr>
 							<td style="text-align: left; padding: 0 30px;">
-								<h2>Call for Talent</h2>
+								<h2 style="color: #fff">Call for Talent</h2>
 
 							</td>
 						</tr>
@@ -420,14 +407,14 @@
 															<tr>
 																<td>
 																	<a href="#"> <img
-																			src="https://i.ibb.co/YWnxx9F/placeholder-img.jpg"
+																			src="https://mcusercontent.com/79433c847494fdb42cd1302c5/images/c4cec5e7-f0d9-b109-0bb0-00328eb44c57.jpg"
 																			alt="" width="130" height="130"
 																			style="max-width: 130px"></a>
 																</td>
 															</tr>
 															<tr>
 																<td>
-																	<h4>
+																	<h4 style="text-align: center; color: #fff; padding: 10px 0px;">
 																		Here Text</h4>
 																	<p>Lorem ipsum dolor sit amet consectetur
 																		adipisicing elit. Est sunt tempore autem
@@ -449,14 +436,14 @@
 															<tr>
 																<td>
 																	<a href="#"> <img
-																			src="https://i.ibb.co/YWnxx9F/placeholder-img.jpg"
+																			src="https://mcusercontent.com/79433c847494fdb42cd1302c5/images/c4cec5e7-f0d9-b109-0bb0-00328eb44c57.jpg"
 																			alt="" width="130" height="130"
 																			style="max-width: 130px"></a>
 																</td>
 															</tr>
 															<tr>
 																<td>
-																	<h4>
+																	<h4 style="text-align: center; color: #fff; padding: 10px 0px;">
 																		Here Text</h4>
 																	<p>Lorem ipsum dolor sit amet, consectetur
 																		adipisicing elit. Debitis animi doloremque
@@ -477,14 +464,14 @@
 															<tr>
 																<td>
 																	<a href="#"> <img
-																			src="https://i.ibb.co/YWnxx9F/placeholder-img.jpg"
+																			src="https://mcusercontent.com/79433c847494fdb42cd1302c5/images/c4cec5e7-f0d9-b109-0bb0-00328eb44c57.jpg"
 																			alt="" width="130" height="130"
 																			style="max-width: 130px"></a>
 																</td>
 															</tr>
 															<tr>
 																<td>
-																	<h4>
+																	<h4 style="text-align: center; color: #fff; padding: 10px 0px;">
 																		Here Text</h4>
 																	<p>Lorem ipsum dolor, sit amet consectetur
 																		adipisicing elit. Dicta dolor harum quaerat
@@ -510,10 +497,10 @@
 
 			<tr>
 				<td style="padding: 0 0 30px">
-					<table width="100%" style="padding: 15px 30px;">
+					<table width="100%">
 						<tr>
 							<td>
-								<h2>MAS Alumni</h2>
+								<h2 class="dark-font"  style="color: #000; padding: 15px 30px;">MAS Alumni</h2>
 							</td>
 						</tr>
 					</table>
@@ -527,7 +514,7 @@
 												<tr>
 													<td>
 														<a href="#"> <img
-																src="https://i.ibb.co/YWnxx9F/placeholder-img.jpg"
+																src="https://mcusercontent.com/79433c847494fdb42cd1302c5/images/c4cec5e7-f0d9-b109-0bb0-00328eb44c57.jpg"
 																alt="" width="240" style="max-width: 240px"></a>
 														<!-- <a href="#"> <img src="https://i.ibb.co/ts9df1w/videoImg.png" alt=""
 															width="260" style="max-width: 260px"></a> -->
@@ -545,8 +532,8 @@
 												<tr>
 													<td>
 
-														<h4>Alumni News Title</h4>
-														<p style="padding-bottom: 18px; font-size: 16px;">Lorem ipsum
+														<h4 class="dark-font" style="color: #000">Alumni News Title</h4>
+														<p class="dark-font" style="padding-bottom: 18px; font-size: 16px; color: #000">Lorem ipsum
 															dolor sit amet consectetur adipisicing elit. Atque odit
 															obcaecati voluptas iure placeat, earum, optio praesentium
 															expedita nobis voluptates ullam mollitia nam iste quos,
@@ -594,51 +581,47 @@
 				<td>
 					<table width="100%">
 						<tr>
-							<td class="resource-column" style="border-top: 1px solid rgb(203, 203, 203)">
-								<h4>Get Involved</h4>
-								<p style="margin-top: -20px; margin-bottom: 30px; font-size: 15px; font-style: italic;">
+							<td class="resource-column" style="border-top: 1px solid rgb(203, 203, 203); ">
+								<h4 class="dark-font" style="color: #000; text-align: center;">Get Involved</h4>
+								<p class="dark-font" style="margin-top: 0px; margin-bottom: 30px; font-size: 15px; font-style: italic;">
 									Other resources and networking opportunities...</p>
-								<table class="column dark-resource-column">
+								<table class="column dark-resource-column" style="background-color: #f7f7f7; padding: 20px 30px 20px;">
 									<tr>
 										<td
-											style="text-align: left; padding-bottom: 20px;  border-bottom: 1px solid black">
+											style="text-align: left; padding: 10px 20px 20px;  border-bottom: 1px solid black">
 
-											<p style="font-size: 15px">Resource name</p>
+											<p class="dark-font" style="font-size: 15px; color: #000">Resource name</p>
 											<a href="#" class="dark-link"
 												style="font-size: 16px; text-decoration: none; color: #006298; font-weight: bold"
 												href="#">Title of link...</a>
-											<p style="font-size: 15px">Description of this resource...</p>
+											<p class="dark-font" style="font-size: 15px; color: #000">Description of this resource...</p>
 										</td>
 									</tr>
 								</table>
-								<table class="column dark-resource-column">
-									<tr>
-										<td
-											style="text-align: left; padding-bottom: 20px;  border-bottom: 1px solid black">
-
-											<p style="font-size: 15px">Resource name</p>
-											<a href="#" class="dark-link"
-												style="font-size: 16px; text-decoration: none; color: #006298; font-weight: bold"
-												href="#">Title of
-												link...</a>
-											<p style="font-size: 15px">Description of this resource...</p>
-										</td>
-									</tr>
-								</table>
-								<table class="column dark-resource-column">
-									<tr>
-										<td
-											style="text-align: left; padding-bottom: 20px;  border-bottom: 1px solid black">
-
-											<p style="font-size: 15px">Resource name</p>
-											<a href="#" class="dark-link"
-												style="font-size: 16px; text-decoration: none; color: #006298; font-weight: bold"
-												href="#">Title of
-												link...</a>
-											<p style="font-size: 15px">Description of this resource...</p>
-										</td>
-									</tr>
-								</table>
+									<table class="column dark-resource-column" style="background-color: #f7f7f7; padding: 20px 30px 20px;">
+										<tr>
+											<td style="text-align: left; padding: 10px 20px 20px; border-bottom: 1px solid black">
+									
+												<p class="dark-font" style="font-size: 15px; color: #000">Resource name</p>
+												<a href="#" class="dark-link"
+													style="font-size: 16px; text-decoration: none; color: #006298; font-weight: bold" href="#">Title of
+													link...</a>
+												<p class="dark-font" style="font-size: 15px; color: #000">Description of this resource...</p>
+											</td>
+										</tr>
+									</table>
+									<table class="column dark-resource-column" style="background-color: #f7f7f7; padding: 20px 30px 20px;">
+										<tr>
+											<td style="text-align: left; padding: 10px 20px 20px;  border-bottom: 1px solid black; height: 30px;">
+									
+												<p class="dark-font" style="font-size: 15px; color: #000">Resource name</p>
+												<a href="#" class="dark-link"
+													style="font-size: 16px; text-decoration: none; color: #006298; font-weight: bold" href="#">Title of
+													link...</a>
+												<p class="dark-font" style="font-size: 15px; color: #000">Description of this resource...</p>
+											</td>
+										</tr>
+									</table>
 							</td>
 						</tr>
 					</table>
@@ -652,16 +635,16 @@
 
 							<td style="text-align: center;">
 
-								<a href="#"><img src="https://i.ibb.co/mXjktnF/social-icon.png" alt="" width="30"></a>
-								<a href="#"><img src="https://i.ibb.co/mXjktnF/social-icon.png" alt="" width="30"></a>
-								<a href="#"><img src="https://i.ibb.co/mXjktnF/social-icon.png" alt="" width="30"></a>
-								<a href="#"><img src="https://i.ibb.co/mXjktnF/social-icon.png" alt="" width="30"></a>
-								<a href="#"><img src="https://i.ibb.co/mXjktnF/social-icon.png" alt="" width="30"></a>
+								<a href="#"><img src="https://mcusercontent.com/79433c847494fdb42cd1302c5/images/a698770b-d32c-bb29-3222-78b4ac07ef77.png" alt="" width="30"></a>
+								<a href="#"><img src="https://mcusercontent.com/79433c847494fdb42cd1302c5/images/a698770b-d32c-bb29-3222-78b4ac07ef77.png" alt="" width="30"></a>
+								<a href="#"><img src="https://mcusercontent.com/79433c847494fdb42cd1302c5/images/a698770b-d32c-bb29-3222-78b4ac07ef77.png" alt="" width="30"></a>
+								<a href="#"><img src="https://mcusercontent.com/79433c847494fdb42cd1302c5/images/a698770b-d32c-bb29-3222-78b4ac07ef77.png" alt="" width="30"></a>
+								<a href="#"><img src="https://mcusercontent.com/79433c847494fdb42cd1302c5/images/a698770b-d32c-bb29-3222-78b4ac07ef77.png" alt="" width="30"></a>
 
-								<p>IUPUI</p>
-								<p>School of Informatics and Computing</p>
-								<p>525 W Michigan St,</p>
-								<p>Indianapolis, IN 46202</p>
+								<p class="dark-font" style="color: #000">IUPUI</p>
+								<p class="dark-font" style="color: #000">School of Informatics and Computing</p>
+								<p class="dark-font" style="color: #000">525 W Michigan St,</p>
+								<p class="dark-font" style="color: #000">Indianapolis, IN 46202</p>
 							</td>
 						</tr>
 					</table>
@@ -672,47 +655,3 @@
 </body>
 
 </html>
-<!-- 
-<div style="position:absolute;bottom: 0;width: 100%;text-align: center;line-height: 40px;font-size: 25px;">
-	<a href="https://responsivehtmlemail.com/html-email-course/" target="_blank"
-		style="color: #404577;text-decoration: none;">www.ResponsiveHTMLEmail.com</a>
-</div> -->
-
-
-
-
-
-<!-- Begin Social Share **you can remove this to center the template :) -->
-<style>
-	.btn:hover {
-		color: white;
-		opacity: .8;
-		transform: scale(1.02);
-	}
-</style>
-<!-- Button trigger modal -->
-<!-- <button type="button" class="btn btn-sm btn-danger"
-	style="position: absolute; right: 7px; bottom: 7px;transition: transform .3s ease;" data-toggle="modal"
-	data-target="#socialModal">
-	Subscribe!
-</button> -->
-<!-- Modal -->
-
-<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400&display=swap" rel="stylesheet">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-	integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-	crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-	integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-	crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-	integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-	crossorigin="anonymous"></script>
-<script>
-	$(this).delay(2000).queue(function () { /*-- CHANGE DELAY TIME --*/
-		$("#socialModal").modal('show');
-	});
-</script> -->
