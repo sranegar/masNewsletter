@@ -8,11 +8,90 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Media Arts & Science | School of Informatics and Computer |</title>
 	<link rel="stylesheet" href="https://use.typekit.net/wvk6lws.css">
+	<meta name="color-scheme" content="light dark">
+	<meta name="supported-color-schemes" content="light dark">
 	<style type="text/css">
+		:root {
+			color-scheme: light dark;
+			supported-color-schemes: light dark;
+		}
+
+		@media (prefers-color-scheme: dark) {
+			.dark-main {
+				background-color: #262626 !important;
+				color: #fff !important;
+			}
+
+			[data-ogsc] .dark-main {
+				background-color: #262626 !important;
+				color: #fff !important;
+			}
+
+			.light-logo {
+				display: none !important;
+			}
+
+			[data-ogsc] .light-logo {
+				display: none !important;
+			}
+
+			.dark-logo {
+				display: block !important;
+				overflow: visible !important;
+				float: none !important;
+				width: auto !important;
+				max-height: inherit !important;
+				max-width: inherit !important;
+				line-height: auto !important;
+				visibility: inherit !important;
+
+			}
+
+			[data-ogsc] .dark-logo {
+				display: block !important;
+				overflow: visible !important;
+				float: none !important;
+				width: auto !important;
+				max-height: inherit !important;
+				max-width: inherit !important;
+				line-height: auto !important;
+				visibility: inherit !important;
+
+			}
+
+			.video-column .dark-video-column {
+				background-color: #373737 !important;
+				color: #fff !important;
+			}
+
+			[data-ogsc] .video-column .dark-video-column {
+				background-color: #373737 !important;
+				color: #fff !important;
+			}
+
+			.video-column .dark-video-column .dark-link {
+			 
+				color: #63B1D3 !important;
+			}
+
+			[data-ogsc] .video-column .dark-video-column .dark-link {
+		 
+				color: #63B1D3 !important;
+			}
+		}
+
 		body {
 			margin: 0;
 			background-color: #cccccc;
 
+		}
+
+		h3 {
+			font-size: 22px;
+		}
+
+		h4 {
+			font-size: 18px;
 		}
 
 		table {
@@ -42,34 +121,44 @@
 			max-width: 600px;
 			border-spacing: 0;
 			font-family: Arial, Helvetica, sans-serif;
-			border-color: #0E1825 1px solid;
+			color: black;
 		}
 
-		.columns {
-		 
-			/* border: 1px solid #A80532; */
-			padding: 0px 30px;
-		 
-		}
 
-		.banner-row {
-			align-items: center;
-			justify-content: center;
-			display: flex;
-			margin-top: 20px;
-		}
+
+		.banner-row {}
 
 		.two-columns {
 			text-align: center;
 			font-size: 0;
+
 		}
 
 		.two-columns .column {
 			width: 100%;
 			max-width: 300px;
 			display: inline-block;
-			vertical-align: middle;
+			vertical-align: top;
 			text-align: center;
+		}
+
+		.video-column {
+			text-align: center;
+			padding: 10px 10px 30px;
+		}
+
+		.video-column .column {
+			width: 100%;
+			max-width: 500px;
+			height: 280px;
+			margin: 0 auto;
+			padding: 40px;
+			background-color: #f7f7f7;
+		}
+
+		.video-column .column video {
+			width: 100%;
+
 		}
 
 		.three-columns {
@@ -94,13 +183,8 @@
 		.three-columns .content {
 			font-size: 15px;
 			line-height: 20px;
-			padding: 0 5px;
 		}
 
-		.two-columns.last {
-			padding: 15px 0;
-
-		}
 
 		.two-columns .padding {
 			padding: 20px;
@@ -110,6 +194,15 @@
 			font-size: 15px;
 			line-height: 20px;
 			text-align: left;
+
+		}
+
+		.two-columns .content h4 {
+			margin: 0px;
+		}
+
+		.two-columns .content img {
+			padding: 20px 0px 0px;
 
 		}
 
@@ -138,26 +231,34 @@
 <body>
 
 	<center class="wrapper">
-		<table class="main" width="100%">
+		<table class="main dark-main" width="100%">
 
 			<!-- TOP BORDER -->
 			<tr>
-				<td height="8" style="background-color:rgb(255, 255, 255)"></td>
+				<td height="8" style="border-top: 4px solid #990000"></td>
 			</tr>
 
 			<!-- LOGO SECTION -->
 			<tr>
-				<td>
+				<td style="padding: 30px">
 					<table width="100%">
 						<tr>
 							<td class="columns">
 								<table class="column">
 									<tr>
 										<td>
-											 
-												 
-											<a href="#"><img src="https://i.ibb.co/sJ5CgKX/SOIC-IUPUI-TAB-full-color-horiz.jpg" alt=""
-													width="200"></a>
+											<img src="img/iu_tab_web.png" alt="SOIC-IUPUI-color-HORIZ" border="0"
+												width="34" height="40" style="margin-right: 10px">
+											<!-- <img src="https://i.ibb.co/4YHkpfc/SOIC-IUPUI-color-HORIZ.png"
+												alt="SOIC-IUPUI-color-HORIZ" border="0" width="220"> -->
+										</td>
+										<td>
+											<p style="margin: 0px; padding: 0px; font-size: 15px; font-weight: bold;">
+												IUPUI</p>
+											<p style="margin: 0px; padding: 0px; font-size: 11px;">INDIANA UNIVERSITY
+											</p>
+											<p style="margin: 0px; padding: 0px; font-size: 10px;">School of Informatics
+												and Computing</p>
 										</td>
 									</tr>
 								</table>
@@ -168,27 +269,74 @@
 			</tr>
 
 			<!-- BANNER IMAGE -->
-			<tr class="banner-row" style="background-color: #0E1825;">
+			<tr class="banner-row">
 				<td>
-					<!-- <a href=""><img src="img/Group 26.jpg" alt="" width="585" style="max-width: 100%"></a> -->
-					<table width="100%" height="110" style="max-width: 300px"></table>
+
+					<table width="100%" style="padding: 20px;">
+						<tr>
+							<td style="text-align: center">
+
+								<img class="light-logo" src="https://i.ibb.co/whXC6Zx/mas-banner.png" alt="mas-banner"
+									border="0" width="500" style="max-width: 100%" />
+								<!--[if !mso]><! -->
+								<div class="dark-logo"
+									style="display:none; overflow: hidden; float: left; width: 0px; max-height: 0px; max-width: 0px; line-height: 0px; visibility: hidden;"
+									align="center">
+									<img src="img/mas-banner-dark.png" alt="mas-banner" border="0" width="500"
+										style="max-width: 100%" />
+								</div>
+								<!--<![endif]-->
+							</td>
+						</tr>
+					</table>
 				</td>
 			</tr>
 			<!-- TITLE -->
-			<tr>
+			<!-- <tr>
 				<td>
 					<table width="100%">
 						<tr>
 							<td style="text-align: center">
-								<p style="font-style: italic; margin: 25px 0 10px;">Have an announcement to make?</p>
-								<h2 style="margin: 0 0 30px;">Share your big news...</h2>
+								<p style="font-style: italic; margin-top: 25px">Have an announcement to make?</p>
+								<h2 style="margin-top: -5px">Share your big news...</h2>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr> -->
+			<!-- Video -->
+			<tr>
+				<td>
+					<table width="100%">
+						<tr>
+							<td class="video-column">
+								<table class="column dark-video-column">
+									<tr>
+										<td>
+											<video src="https://www.w3schools.com/html/mov_bbb.mp4"
+												poster="https://i.ibb.co/tbDjGpZ/video-img.jpg" controls="controls">
+												<img src="https://i.ibb.co/tbDjGpZ/video-img.jpg" alt="video-img"
+													border="0" />
+											</video>
+										</td>
+									</tr>
+									<tr>
+										<td style="text-align: left">
+											<h3 style="margin-top: 30px">Share more of the story...</h3>
+											<p style="font-size: 18px">This is where you'll type more...</p>
+											<a href="#" class="dark-link" style="font-size: 16px; text-decoration: none; color: #006298; font-weight: bold"
+												href="#">View more...</a>
+										</td>
+									</tr>
+								</table>
+
 							</td>
 						</tr>
 					</table>
 				</td>
 			</tr>
 			<!-- THREE COLUMN SECTION -->
-			<tr>
+			<!-- <tr>
 				<td>
 					<table width="100%">
 						<tr>
@@ -200,14 +348,13 @@
 											<table class="content">
 												<tr>
 													<td>
-														<a href="#"> <img src="img/keyboard.jpg" alt="" width="130"
+														<a href="#"> <img src="https://i.ibb.co/ts9df1w/videoImg.png" alt="" width="130"
 																height="130" style="max-width: 130px"></a>
 													</td>
 												</tr>
 												<tr>
 													<td>
-														<p
-															style="font-weight: bold; font-size: 18px">
+														<p style="font-weight: bold; font-size: 18px">
 															Here Text</p>
 														<p>This is where you'll type more...</p>
 													</td>
@@ -223,14 +370,13 @@
 											<table class="content">
 												<tr>
 													<td>
-														<a href="#"> <img src="img/keyboard.jpg" alt="" width="130"
+														<a href="#"> <img src="https://i.ibb.co/ts9df1w/videoImg.png" alt="" width="130"
 																height="130" style="max-width: 130px"></a>
 													</td>
 												</tr>
 												<tr>
 													<td>
-														<p
-															style="font-weight: bold; font-size: 18px">
+														<p style="font-weight: bold; font-size: 18px">
 															Here Text
 														</p>
 														<p>This is where you'll type more...</p>
@@ -246,14 +392,13 @@
 											<table class="content">
 												<tr>
 													<td>
-														<a href="#"> <img src="img/keyboard.jpg" alt="" width="130"
+														<a href="#"> <img src="https://i.ibb.co/ts9df1w/videoImg.png" alt="" width="130"
 																height="130" style="max-width: 130px"></a>
 													</td>
 												</tr>
 												<tr>
 													<td>
-														<p
-															style="font-weight: bold; font-size: 18px">
+														<p style="font-weight: bold; font-size: 18px">
 															Here Text
 														</p>
 														<p>This is where you'll type more...</p>
@@ -267,12 +412,12 @@
 						</tr>
 					</table>
 				</td>
-			</tr>
+			</tr> -->
 
 			<!-- TWO COLUMN SECTION -->
 
 			<tr>
-				<td style="background-color: #0E1825; color: white; padding: 10px 0">
+				<td style="background-color: #0E1825; color: white; padding: 0 0 20px">
 					<table width="100%">
 						<tr>
 							<td class="two-columns last">
@@ -282,8 +427,8 @@
 											<table class="content">
 												<tr>
 													<td>
-														<a href="#"> <img src="img/banner.jpg" alt="" width="260"
-																style="max-width: 260px"></a>
+														<a href="#"> <img src="https://i.ibb.co/ts9df1w/videoImg.png"
+																alt="" width="260" style="max-width: 260px"></a>
 													</td>
 												</tr>
 											</table>
@@ -296,18 +441,35 @@
 											<table class="content">
 												<tr>
 													<td>
-														<p style="font-weight: bold; font-size: 18px">Create Custom
-															Designs</p>
-														<p style="padding-bottom: 10px">Lorem ipsum dolor sit amet
-															consectetur adipisicing elit. Vero repellendus aliquid
-															cupiditate</p>
-														<a href="#" class="button">Read More</a>
+														<h4>Create Custom
+															Designs</h4>
+														<p style="padding-bottom: 8px; font-size: 16px;">Lorem ipsum
+															dolor sit amet
+															consectetur adipisicing elit. Expedita, deleniti aliquid
+															inventore ratione reiciendis tempore qui earum repudiandae
+															rem optio vitae sint quia architecto quasi ullam
+															consequuntur perferendis cupiditate ut.</p>
+														<table class="column">
+															<tr>
+																<td>
+																	<table class="content" style="padding: 10px 0">
+																		<tr>
+																			<td>
+
+																				<a href="#" class="button">Read More</a>
+																			</td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+														</table>
 													</td>
 												</tr>
 											</table>
 										</td>
 									</tr>
 								</table>
+
 							</td>
 						</tr>
 					</table>
@@ -339,9 +501,9 @@
 					<table width="100%">
 						<tr>
 							<td style="text-align: center; padding: 45px 20px; color: #fff">
-<!-- 							 
+								<!-- 							 
 									<a href=""><img src="img/SOIC-IUPUI-Vertical-REVERSED-WHITE-TAB.png" alt="" width="75"></a> -->
-							 
+
 								<p style="font-size: 12px">535 W Michigan St, Indianapolis, IN 46202</p>
 							</td>
 						</tr>
